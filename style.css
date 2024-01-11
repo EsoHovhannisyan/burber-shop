@@ -1,0 +1,1775 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Header {
+    width: 360px;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d6a354;
+}
+
+.Header>div {
+    margin: 40px;
+}
+
+.Logo {
+    width: 40%;
+    height: auto;
+}
+
+.Logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Menu {
+    width: 100%;
+    height: auto;
+}
+
+.Menu ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Menu li {
+    margin: 5px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.Menu a {
+    display: block;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: 900;
+}
+
+.Menu a:hover {
+    color: #ffffff;
+}
+
+.Banner_Box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid #d6a354;
+    background: linear-gradient(219deg, rgba(34, 193, 195, 0.6638304980195203) 0%, rgba(253, 187, 45, 0.6246148117450105) 100%) no-repeat, url(https://templatemo.com/templates/templatemo_585_barber_shop/images/client-doing-hair-cut-barber-shop-salon.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.Banner_Context {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    flex-direction: column;
+    /* background-color: #ffffff; */
+}
+
+.Banner_Context>div {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Banner_Context h1 {
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: white;
+}
+
+.Banner_Context p {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.Banner_Context a {
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.Banner_Context a:first-child {
+    border: 1px solid white;
+}
+
+.Banner_Context a:last-child {
+    background-color: #c12828;
+}
+
+.Banner_Context a:first-child:hover {
+    background-color: #d6a354;
+    border: 1px solid #d6a354;
+}
+
+.Banner_Context a:last-child:hover {
+    background-color: #d6a354;
+}
+
+.Second_Banner {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 10px solid #d6a354;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: -5%;
+    top: 60%;
+}
+
+.Second_Banner::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #d6a354;
+    background-image: url(https://templatemo.com/templates/templatemo_585_barber_shop/images/vintage-chair-barbershop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -15%;
+}
+
+.Second_Banner>div {
+    margin: 15px;
+}
+
+.Second_Banner p {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+
+.Second_Banner a {
+    padding: 10px 25px;
+    color: white;
+    background-color: #d6a354;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 900;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.Second_Banner a:hover {
+    background-color: #c12828;
+}
+
+.Best_hairdressers_Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 20px 40px 400px;
+    overflow: hidden;
+}
+
+.Best_hairdressers_Container>div {
+    margin: 10px;
+}
+
+.Best_hairdressers_Container h1 {
+    font-size: 55px;
+}
+
+.Best_hairdressers_Container p {
+    color: rgba(0, 0, 0, 0.612);
+    font-size: 25px;
+}
+
+.Best_hairdressers_Container>div:nth-child(2) {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.196);
+}
+
+.Meet_Babers_Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Meet_Babers_Container>div {
+    margin: 25px;
+}
+
+.Meet_Babers_Container h2 {
+    color: #c12828;
+    font-size: 30px;
+}
+
+.Meet_Babers_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Barber {
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: #d6a354;
+    transition: 0.4s;
+    position: relative;
+}
+
+.Barber:last-child {
+    margin-left: 30px;
+}
+
+.Barber::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 30px;
+    background-image: url(https://templatemo.com/templates/templatemo_585_barber_shop/images/barber/portrait-male-hairdresser-with-scissors.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(8deg);
+}
+
+.Barber:last-child::before {
+    background-image: url(https://templatemo.com/templates/templatemo_585_barber_shop/images/barber/portrait-mid-adult-bearded-male-barber-with-folded-arms.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Barber:hover {
+    background: linear-gradient(219deg, rgb(34, 192, 195) 0%, rgb(253, 187, 45) 100%);
+    transform: scale(1.05);
+}
+
+.Barber:hover .Barber_Info_Box {
+    top: 65%;
+}
+
+.Barber_Info_Box {
+    width: 90%;
+    border-radius: 30px;
+    padding: 7px 20px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    background-color: #ffffff;
+    transition: 0.4s;
+}
+
+.Barber_Info_Box>div {
+    width: auto;
+    height: auto;
+}
+
+.Barber_Info_Box h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.Barber_Info_Box ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Barber_Info_Box li {
+    list-style: none;
+    margin: 5px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.Barber_Info_Box a {
+    display: block;
+    padding: 6px 10px;
+    background-color: #c12828;
+    color: white;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.Barber_Info_Box a:hover {
+    background-color: #d6a354;
+}
+
+.Discount_box {
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://templatemo.com/templates/templatemo_585_barber_shop/images/barber-customer-giving-high-five.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Discount_box>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 25%;
+}
+
+.Promo_box h1 {
+    font-size: 45px;
+    color: #c12828;
+    margin-left: 80px;
+}
+
+.Promo_box p {
+    font-size: 23px;
+    color: #ffffff;
+    padding: 15px 84px;
+}
+
+.Promo_box>div:nth-child(3) {
+    width: 176px;
+    height: 72px;
+    position: relative;
+    font-size: 20px;
+    background-color: #d6a354;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.Promo_box span {
+    color: rgba(0, 0, 0, 0.742);
+}
+
+.Service_conteiner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    /* background-color: #c12828; */
+    padding: 40px 20px 40px 400px;
+}
+
+.Service_conteiner>div {
+    margin: 25px;
+}
+
+.Service_box {
+    width: 100%;
+    height: auto;
+    /* background-color: #c12828; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Service {
+    width: 470px;
+    height: 320px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 33px;
+}
+
+.Service img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.Service_info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.Service_info::before {
+    content: 'Hair cut';
+    position: absolute;
+    font-size: 32px;
+    left: 5%;
+    top: 80%;
+    color: white;
+    font-weight: 900;
+}
+
+.Service_info::after {
+    content: '$36.00';
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: #d6a354;
+    font-weight: 900;
+    position: absolute;
+    right: 5%;
+    top: 82%;
+}
+
+.Service:hover .Service_info {
+    border: 6px solid #d6a354;
+}
+
+.Service:hover img {
+    transform: scale(1.1);
+}
+
+.Service:nth-child(2) {
+    margin-left: 33px;
+}
+
+.Service:nth-child(2) .Service_info::before {
+    content: "Washing";
+}
+
+.Service:nth-child(2) .Service_info::after {
+    content: "$25.00";
+}
+
+.Service:nth-child(3) .Service_info::before {
+    content: 'Shaves';
+}
+
+.Service:nth-child(3) .Service_info::after {
+    content: '$30.00';
+}
+
+.Service:nth-child(4) {
+    margin-left: 33px;
+}
+
+.Service:nth-child(4) .Service_info::before {
+    content: 'Kids';
+}
+
+.Service:nth-child(4) .Service_info::after {
+    content: '$25.00';
+}
+
+.Book_a_Seat_conteiner {
+    width: 100%;
+    height: auto;
+    background-image: url(https://templatemo.com/templates/templatemo_585_barber_shop/images/vintage-chair-barbershop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40px 20px 40px 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Book_a_Seat_box {
+    width: 850px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px 100px;
+    border-radius: 20px;
+
+}
+
+.Book_a_Seat_tittle_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Book_a_Seat_tittle_box h1 {
+    font-size: 55px;
+}
+
+.Book_a_Seat_tittle_box p {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.594);
+}
+
+
+.Barber_Reserve_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Barber_Reserve_Box>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.Barber_Reserve_Box>div>div {
+    /* background-color: #c12828; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.Barber_Reserve_Box>div:nth-child(2)>div:nth-child(2) {
+    padding: 0 6px;
+}
+
+.Barber_Reserve_Box input {
+    padding: 10px 25px;
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    color: #717275;
+    outline: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.Barber_Reserve_Box input:hover {
+    background-color: #ced4da3c;
+    border: 1px solid #ced4da3c;
+}
+
+.Barber_Reserve_Box input:focus {
+    border: 5px solid rgba(84, 84, 249, 0.279);
+    background-color: #ced4da3c;
+}
+
+.Barber_Reserve_Box select {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: 1px solid #ced4da;
+    font-size: 18px;
+    color: #717275;
+    font-weight: 700;
+    outline: none;
+}
+
+.Barber_Reserve_Box select:hover {
+    background-color: #ced4da3c;
+    border: 1px solid #ced4da3c;
+}
+
+.Barber_Reserve_Box select:focus {
+    border: 5px solid rgba(84, 84, 249, 0.279);
+    padding: 9px 20px;
+    background-color: #ced4da3c;
+}
+
+.Barber_Reserve_Box textarea {
+    width: 97%;
+    height: 135px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 900;
+    outline: none;
+    border: 1px solid #ced4da;
+    transition: 0.4s;
+    resize: vertical;
+}
+
+.Barber_Reserve_Box textarea:hover {
+    border: 1px solid #ced4da3c;
+    background-color: #ced4da3c;
+}
+
+.Barber_Reserve_Box textarea:focus {
+    background-color: #ced4da3c;
+    border: 5px solid rgba(84, 84, 249, 0.279);
+}
+
+button {
+    width: 230px;
+    padding: 12px;
+    margin: 5px;
+    font-size: 25px;
+    background-color: #c12828;
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+.Price_Container {
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Price_Container>div {
+    margin-top: 15px;
+}
+
+.Price_list_conteiner {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 40px 20px 40px 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Price_list_conteiner>div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.Price_list_conteiner h1 {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.Price_list_conteiner p {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+.Price_box {
+    width: 100%;
+    height: auto;
+}
+
+.Price_box ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Price_box li {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.Price_box span:nth-child(1) {
+    height: 2px;
+    flex: auto;
+    background-color: #717275;
+    margin: auto 15px 0;
+}
+
+.Price_box span:nth-child(2) {
+    color: #d6a354;
+}
+
+.Img {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d6a354;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.Img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transform: rotate(8deg);
+    background-image: url(https://templatemo.com/templates/templatemo_585_barber_shop/images/vintage-chair-barbershop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.Img:hover {
+    background: linear-gradient(219deg, rgb(34, 192, 195) 0%, rgb(253, 187, 45) 100%);
+    transform: scale(1.05);
+}
+
+.Contact_conteiner {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 40px 20px 40px 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Contact_conteiner>div {
+    margin-top: 20px;
+}
+
+.Contact_conteiner>div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    background-color: #f0f8ff;
+}
+
+.Contact_conteiner h1 {
+    font-size: 60px;
+}
+
+.Contact_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.Contact_Information {
+    width: 500px;
+    height: auto;
+    /* background-color: #c12828; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Contact_Information>div {
+    margin: 5px;
+}
+
+.Contact_Information h2 {
+    font-size: 30px;
+}
+
+.Links a {
+    transition: 0.4s;
+    text-decoration: none;
+    color: #d6a354;
+    font-size: 20px;
+}
+
+.Links a:hover {
+    color: #c12828;
+}
+
+.Contact_Information ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Contact_Information li {
+    width: 40px;
+    height: 40px;
+    list-style: none;
+    margin: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact_Information ul li a {
+    display: block;
+    padding: 13px;
+    background-color: #c12828;
+    color: white;
+    transition: 0.4s;
+}
+
+.Contact_Information ul li a:hover {
+    background-color: #d6a354;
+}
+
+
+.Open_Daily_Box {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    
+}
+
+.Open_Daily {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #c12828;
+    transform: rotate(10deg);
+    position: relative;
+    z-index: 1;
+}
+
+.Open_Daily_Background {
+    width: 100%;
+    height: 100%;
+    right: 15%;
+    top: 0;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #d6a354;
+}
+
+.Open_Daily>div {
+    width: 100%;
+    height: auto;
+    transform: translateY(20px) translateX(20px) rotate(-10deg);
+}
+
+.Open_Daily h2 {
+    color: white;
+}
+
+.Open_Daily span {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.Open_Daily>div:first-child {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d6a354;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map_box_conteiner {
+    width: 100%;
+    height: auto;
+    /* background-color: #c12828; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px 40px 400px;
+}
+
+.map_box_conteiner>div {
+    width: 100%;
+}
+
+.map_box_conteiner iframe {
+    width: 100%;
+    height: 270px;
+    right: 12%;
+    border-radius: 15px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 20px 40px 380px;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+}
+
+footer>div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+}
+
+footer>div:last-child {
+    justify-content: space-between;
+    padding-right: 17px;
+}
+
+footer h1 {
+    padding-left: 10px;
+}
+
+footer p {
+    padding-left: 10px;
+}
+
+.Footer_Info_Box {
+    width: 100%;
+    height: auto;
+}
+
+.Footer_Info_Box>div {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background-color: #c12828; */
+}
+
+.Footer_Info_Box>div>div {
+    margin: 2px;
+}
+
+.Footer_Info_Box h3 {
+    color: #c12828;
+}
+
+.Footer_Info_Box span {
+    color: #717275;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+footer p>a {
+    text-decoration: none;
+    color: #d6a354;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+footer p>a:hover {
+    color: #c12828;
+}
+
+.up {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #d6a354;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #d6a354;
+    transition: 0.4s;
+}
+
+.up:hover {
+    color: #c12828;
+    border: 1px solid #c12828;
+}
+
+#menu_btn {
+    display: none;
+    visibility: hidden;
+}
+
+label {
+    display: none;
+}
+
+@media(min-width:1200px) {
+
+    /* div{
+        border: 1px solid red;
+    } */
+    .Banner_Box {
+        padding: 0 0 0 120px;
+    }
+
+    .Banner_Context h1 {
+        width: 300px;
+    }
+
+    .Second_Banner {
+        top: 65%;
+    }
+
+    .Barber {
+        width: 490px;
+    }
+
+    .Service {
+        margin-left: 30px;
+        width: 650px;
+        height: 450px;
+    }
+
+    .Book_a_Seat_box {
+        width: 660px;
+    }
+
+    .Price_list_conteiner>div {
+        margin: 20px;
+    }
+
+    .Price_conteiner {
+        width: 470px;
+    }
+
+    .Img {
+        width: 325px;
+    }
+
+    .Contact_Information {
+        width: 370px;
+    }
+
+    .Open_Daily_Background {
+        right: 0;
+    }
+
+    .Contact_Box {
+        justify-content: space-around;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1200px) {
+    .Header {
+        height: 110vh;
+    }
+
+    .Banner_Box {
+        padding: 0 0 0 268px;
+    }
+
+    .Banner_Context h1 {
+        width: 300px;
+        font-size: 60px;
+    }
+
+    .Second_Banner {
+        top: 65%;
+    }
+
+    .Banner_Context {
+        transform: translateY(-50px);
+    }
+
+    .Best_hairdressers_Container {
+        padding: 40px 20px 40px 370px;
+    }
+
+    .Meet_Babers_Box {
+        flex-wrap: wrap;
+    }
+
+    .Barber {
+        margin-top: 60px;
+        width: 490px;
+    }
+
+    .Barber:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .Service {
+        width: 285px;
+        height: 270px;
+    }
+
+    .Service_conteiner>div {
+        margin: 10px;
+    }
+
+    .Book_a_Seat_box {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .img {
+        width: 330px;
+    }
+
+    .Contact_Information {
+        width: 470px;
+    }
+
+    .Open_Daily_Background {
+        right: 0;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    .Header {
+        width: 270px;
+        height: 110vh;
+    }
+
+    .Banner_Box {
+        padding: 0 0 0 275px;
+        height: 66vh;
+        background-attachment: scroll;
+    }
+
+    .Banner_Context h1 {
+        font-size: 60px;
+    }
+
+    .Second_Banner {
+        opacity: 0;
+    }
+
+    .Best_hairdressers_Container {
+        padding: 41px 20px 40px 269px;
+    }
+
+    .Meet_Babers_Container>div {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .Discount_box {
+        height: 300px;
+    }
+
+    .Discount_box>div {
+        margin-left: 30%;
+    }
+
+    .Meet_Babers_Box {
+        flex-wrap: wrap;
+    }
+
+    .Service_conteiner {
+        padding: 40px 20px 40px 253px;
+    }
+
+    .Service_box {
+        justify-content: center;
+    }
+
+    .Service {
+        width: 400px;
+        height: 270px;
+    }
+
+    .Service:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .Service:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .Book_a_Seat_conteiner {
+        padding: 40px 20px 40px 295px;
+    }
+
+    .Barber_Reserve_Box>div {
+        flex-direction: column;
+    }
+
+    .Barber_Reserve_Box>div>div {
+        width: 100%;
+    }
+
+    .Book_a_Seat_tittle_box p {
+        text-align: center;
+    }
+
+    .Price_list_conteiner {
+        padding: 40px 20px 40px 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Price_Container {
+        width: 100%;
+        padding: 25px;
+
+    }
+
+    .Img {
+        width: 90%;
+    }
+
+    .Barber {
+        margin-top: 60px;
+        width: 490px;
+    }
+
+    .Barber:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .Book_a_Seat_box {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .img {
+        width: 330px;
+    }
+
+    .Contact_conteiner {
+        padding: 40px 20px 40px 270px;
+    }
+
+    .Contact_Box {
+        flex-direction: column;
+    }
+
+    .Open_Daily_Box {
+        transform: translateY(55px);
+    }
+
+    .map_box_conteiner {
+        padding: 40px 20px 40px 270px;
+    }
+
+    footer {
+        padding: 40px 20px 40px 260px;
+    }
+
+    .Contact_Information {
+        width: 470px;
+        justify-content: center;
+        align-items: center;
+    }
+    .Open_Daily{
+        width: 105%;
+        height: 120%;
+    }
+
+    .Open_Daily_Background {
+        right: 0;
+        width: 105%;
+        height: 120%;
+    }
+    .Open_Daily>div:first-child{
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media(min-width:552px) and (max-width:768px) {
+    label {
+        background-color: #d6a354;
+        color: white;
+        padding: 17px 21px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        position: fixed;
+        right: 11%;
+        font-size: 17px;
+        top: 5%;
+        z-index: 9999999999999999999999;
+    }
+
+    #menu_btn:checked~.Header {
+        height: 100vh;
+    }
+
+    .Header {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .Banner_Box {
+        width: auto;
+        padding: 0;
+        height: 112vh;
+        background-attachment: scroll;
+    }
+
+    .Banner_Context h1 {
+        font-size: 60px;
+    }
+
+    .Second_Banner {
+        opacity: 0;
+    }
+
+    .Banner_Context {
+        transform: translateY(-115px);
+    }
+
+    .Best_hairdressers_Container {
+        padding: 40px;
+    }
+
+    .Meet_Babers_Container>div {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .Discount_box {
+        height: 300px;
+    }
+
+    .Discount_box>div {
+        margin-left: 0;
+    }
+
+    .Meet_Babers_Box {
+        flex-wrap: wrap;
+    }
+    .Service_conteiner h1{
+        font-size: 50px;
+    }
+
+    .Service_conteiner {
+        padding: 0;
+        align-items: center;
+    }
+
+    .Service_box {
+        justify-content: center;
+    }
+
+    .Service {
+        width: 500px;
+        height: 270px;
+    }
+
+    .Service:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .Service:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .Book_a_Seat_conteiner {
+        padding: 40px;
+    }
+
+    .Barber_Reserve_Box>div {
+        flex-direction: column;
+    }
+
+    .Barber_Reserve_Box>div>div {
+        width: 100%;
+    }
+
+    .Book_a_Seat_tittle_box p {
+        text-align: center;
+    }
+
+    .Price_list_conteiner {
+        padding: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Price_Container {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .Img {
+        width: 90%;
+    }
+
+    .Barber {
+        margin-top: 60px;
+        width: 490px;
+    }
+
+    .Barber:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .Book_a_Seat_box {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .img {
+        width: 330px;
+    }
+
+    .Contact_conteiner {
+        padding: 40px;
+    }
+
+    .Contact_Box {
+        flex-direction: column;
+    }
+
+    .Open_Daily_Box {
+        transform: translateY(55px);
+    }
+
+    .map_box_conteiner {
+        padding: 40px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    .Contact_Information {
+        width: 470px;
+    }
+
+    .Open_Daily_Background {
+        right: 0;
+    }
+
+}
+
+@media(min-width:320px) and (max-width:552px) {
+    label {
+        background-color: #d6a354;
+        color: white;
+        padding: 17px 21px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        position: fixed;
+        right: 11%;
+        font-size: 17px;
+        top: 5%;
+        z-index: 9999999999999999999999;
+    }
+
+    #menu_btn:checked~.Header {
+        height: 100vh;
+    }
+
+    .Header {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .Banner_Box {
+        width: auto;
+        height: 99vh;
+        transform: translateY(10px);
+        background-position: center;
+    }
+
+    .Banner_Context h1 {
+        font-size: 40px;
+        margin-left: 15px;
+    }
+    .Banner_Context p{
+        margin-left: 15px;
+    }
+    .Banner_Context>div{
+        margin-left: 31px;
+        flex-direction: column;
+    }
+    .Banner_Context a {
+        width: 180px;
+        font-size: 17px;
+        padding: 10px 35px;
+    }
+    .Second_Banner {
+        opacity: 0;
+    }
+    .Second_Banner p{
+        font-size: 15px;
+    }
+
+    .Banner_Context {
+        padding: 8px;
+    }
+
+    .Best_hairdressers_Container {
+        width: auto;
+        padding: 40px;
+        align-items: center;
+    }
+    .Best_hairdressers_Container h1{
+        font-size: 38px;
+    }
+    .Book_a_Seat_tittle_box h1{
+        font-size: 38px;
+    }
+
+    .Meet_Babers_Container>div {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+   
+    .Discount_box {
+        height: auto;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .Discount_box>div {
+        margin-left: 0;
+    }
+
+    .Meet_Babers_Box {
+        flex-wrap: wrap;
+    }
+
+    .Service_conteiner {
+        width: 100%;
+        padding: 40px;
+        align-items: center;
+    }
+
+    .Service_box {
+        justify-content: center;
+    }
+
+    .Service {
+        width: 100%;
+        height: 270px;
+    }
+
+    .Service:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .Service:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .Book_a_Seat_conteiner {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Barber_Reserve_Box>div {
+        flex-direction: column;
+    }
+
+    .Barber_Reserve_Box>div>div {
+        width: 100%;
+    }
+
+    .Book_a_Seat_tittle_box p {
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .Price_list_conteiner {
+        width: 100%;
+        padding: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Price_Container {
+        width: 100%;
+        padding: 25px;
+    }
+    .Price_list_conteiner  h1{
+        font-size: 35px;
+    }
+
+    .Img {
+        width: 90%;
+    }
+
+    .Barber {
+        margin-top: 60px;
+        width: 490px;
+    }
+
+    .Barber:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .Book_a_Seat_box {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .img {
+        width: 330px;
+    }
+    .Promo_box h1{
+        text-align: center;
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .Contact_conteiner {
+        width: 100%;
+        padding:30px 10px;
+    }
+    .Contact_conteiner h1{
+        font-size: 42px;
+    }
+    .Contact_conteiner div:first-child{
+        padding: 15px;
+    }
+
+    .Contact_Box {
+        padding: 0;
+        flex-direction: column;
+        transform: translateY(-20px);
+    }
+
+    .Open_Daily_Box {
+        width: 310px;
+        height: 190px;
+        transform: translateY(0);
+    }
+
+    .Open_Daily>div:first-child{
+        transform: translateY(10px) translateX(20px);
+        
+    }
+    .Open_Daily>div{
+      transform:  translateX(15px);
+    }
+    .Open_Daily h2{
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+    /* .Open_Daily span{
+        font-size: 22px;
+    } */
+    .Footer_Info_Box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Footer_Info_Box>div{
+        width: 100%;
+    }
+
+    .map_box_conteiner {
+        width: 100%;
+        padding: 25px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+    footer p>a{
+        margin-left: 0;
+    }
+    /* footer:last-child{
+        padding-left: 240px;
+    } */
+
+    .Contact_Information {
+        width: 100%;
+    }
+    .Contact_Information h2{
+        font-size: 30px;
+       text-align:center;
+    }
+   
+    .Contact_Information>div{
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Open_Daily_Background {
+        right: 0;
+    }
+    /* .up{
+        transform: translateX(65px);
+        width: 65px;
+        height: 65px;
+    } */
+}
